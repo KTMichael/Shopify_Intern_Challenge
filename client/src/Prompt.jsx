@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-const { APIKey } = "../../server/config.js";
+import AllResponses from "./AllResponses.jsx";
 const Prompt = () => {
-  const [allResponses, setAllResponses] = useState([]);
   const [networkError, setNetworkError] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
-  //   //only allows letters and numbers in input
-  // const verifyInput = (text) => {
-  //   return text.replace(/[^\w]|_/g, "");
-  // };
+  const [latestPost, setLatestPost] = useState({ prompt: "", response: "" });
 
   const sendPrompt = (e) => {
     e.preventDefault();
     axios
       .post("/prompts", { body: prompt })
       .then((res) => {
-        setResponse(res.data.choices[0].text);
-        console.log("res", res.data.choices[0].text);
+        setLatestPost({ prompt: prompt, response: res.data.choices[0].text });
+        setPrompt("");
       })
       .catch((error) => {
         console.log("error", error);
@@ -25,21 +21,25 @@ const Prompt = () => {
       });
   };
   return (
-    <div id="prompt">
-      <h2>Write Your Prompt Here</h2>
-      <form>
-        <textarea
-          id="promptInput"
-          type="text"
-          placeholder="Write a joke about Gnomes"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-        ></textarea>
-        <br />
-        <button onClick={(e) => sendPrompt(e)} type="submit">
-          Submit
-        </button>
-      </form>
+    <div id="content">
+      <div id="prompt">
+        <h2>Write Your Prompt Here</h2>
+        <form>
+          <textarea
+            id="promptInput"
+            type="text"
+            placeholder="Write a joke about Gnomes"
+            value={prompt}
+            pattern="[a-zA-Z0-9]*"
+            onChange={(e) => setPrompt(e.target.value)}
+          ></textarea>
+          <br />
+          <button onClick={(e) => sendPrompt(e)} type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <AllResponses latestPost={latestPost} />
     </div>
   );
 };
