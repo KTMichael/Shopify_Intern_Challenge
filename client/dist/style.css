@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  font-weight: 200;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#mainPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #4b4453;
+  color: #c4fcf0;
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  height: 95vh;
+  gap: 7%;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 95vh;
+  gap: 10%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: "Truculenta", sans-serif;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+#prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+#promptInput {
+  height: 20vh;
+  width: 30vw;
+  border: solid 5px #344a53;
+  border-radius: 10px;
+  padding: 1%;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+#prompt button {
+  border-radius: 9px;
+  background-color: #344a53;
+  border: solid white 2px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-left: 2%;
+}
+
+#responsesContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#allResponses {
+  height: 30vh;
+  width: 40vw;
+  border: solid 5px #344a53;
+  color: #344a53;
+  background-color: #c4fcf0;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#response {
+  border: solid 2px #344a53;
+  color: #344a53;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+}
