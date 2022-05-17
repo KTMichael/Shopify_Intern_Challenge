@@ -1,9 +1,9 @@
 # Shopify_Intern_Challenge
 The site is launched and live via Heroku and can be found here: 
 
-TO RUN LOCALLY:
+## To Run Locally:
 
-To run the app in production mode:
+### To run the app in production mode:
 1. In the terminal, run "npm install" to install all dependencies
 
 2. Change the config.example.js file name to config.js.
@@ -17,7 +17,7 @@ To run the app in production mode:
 
 6. Open http://localhost:3000/ in a browser to view app.
 
-To run the app in development mode:
+### To run the app in development mode:
 
 1. Replace the current start script with the below script in the scripts section of the package.json file.
 
@@ -34,11 +34,11 @@ To run the app in development mode:
 7. Open http://localhost:3000/ in a browser to view app.
 
 
-TECH STACK:
+## Tech Stack:
 
 JavaScript | React | Node/Express | CSS | HTML5 | Webpack | Babel | OpenAI
 
-CREDITS:
+## Credits:
 
 API | OpenAI | Link: https://beta.openai.com/overview
 
