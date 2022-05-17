@@ -35,6 +35,7 @@ To run the app in development mode:
 
 
 TECH STACK:
+
 JavaScript | React | Node/Express | CSS | HTML5 | Webpack | Babel | OpenAI
 
 CREDITS:
