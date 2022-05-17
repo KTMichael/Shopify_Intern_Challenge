@@ -1,6 +1,10 @@
 # Shopify_Intern_Challenge
 The site is launched and live via Heroku and can be found here: 
 
+
+## Demo GIF
+![Demo](https://raw.githubusercontent.com/KTMichael/Shopify_Intern_Challenge/main/client/dist/shopify.gif)
+
 ## To Run Locally:
 
 ### To run the app in production mode:
