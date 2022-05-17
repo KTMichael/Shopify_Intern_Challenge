@@ -10,8 +10,7 @@ const AllResponses = ({ latestPost }) => {
   ]);
 
   useEffect(() => {
-
-      setAllResponses([latestPost, ...allResponses]);
+    setAllResponses([latestPost, ...allResponses]);
   }, [latestPost]);
 
   return (
@@ -20,7 +19,12 @@ const AllResponses = ({ latestPost }) => {
       <div id="allResponses">
         {allResponses.map((singleResponse, index) => {
           if (singleResponse.prompt !== "") {
-            return <Response singleResponse={singleResponse} key={index} />;
+            return (
+              <Response
+                singleResponse={singleResponse}
+                key={singleResponse.prompt + index}
+              />
+            );
           }
         })}
       </div>
