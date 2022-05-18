@@ -15,24 +15,24 @@ const Prompt = () => {
   const promptMachine = {
     joke: {
       instructions: "Write a joke about",
-      currentPrompt: `Write a joke about Gnomes. Where do gnomes first go when they log on to the internet? The gnome page of course! Write a joke about Cows. Who’s there? Interrupting cow. Interrupting c–. MOO! Write a joke about cans. What do you call a can opener that doesn’t work? A can’t opener! ${currentPromptInstruction} ${prompt}`,
+      currentPrompt: `Write a joke about Gnomes. Where do gnomes first go when they log on to the internet? The gnome page of course! \n Write a joke about Cows. Who’s there? Interrupting cow. Interrupting c–. MOO!\n Write a joke about cans. What do you call a can opener that doesn’t work? A can’t opener! \n ${currentPromptInstruction} ${prompt}`,
       example: " Gnomes",
       engine: "text-curie-001",
       maxToken: 35,
     },
     movie: {
       instructions: "Convert movie titles into emoji",
-      currentPrompt: `${currentPromptInstruction} Back to the Future: 👨👴🚗🕒 Batman: 🤵🦇 Transformers: 🚗🤖 ${prompt}:`,
+      currentPrompt: `${currentPromptInstruction} \n Back to the Future: 👨👴🚗🕒 \n Batman: 🤵🦇 \n Transformers: 🚗🤖 \n ${prompt}:`,
       example: " Drive",
       engine: "text-davinci-002",
       maxToken: 7,
     },
     startUp: {
       instructions: "Brainstorm some start up business ideas for",
-      currentPrompt: `Brainstorm some start up business ideas for socks: Create dating app for lost pairs of socks toast: Create a toaster that puts inspirational quotes on your bread Beer: Create a beer brand named “occasionally” so when someone asked I say I drink occasionally ${currentPromptInstruction} ${prompt}`,
+      currentPrompt: `Brainstorm some start up business ideas for socks: Create dating app for lost pairs of socks \n toast: Create a toaster that puts inspirational quotes on your bread \n Beer: Create a beer brand named “occasionally” so when someone asked I say I drink occasionally \n ${currentPromptInstruction} ${prompt}`,
       example: " Meal Kits",
       engine: "text-curie-001",
-      maxToken: 50,
+      maxToken: 100,
     },
   };
 

@@ -10,10 +10,12 @@ module.exports = {
     const promptData = {
       prompt: data[0],
       temperature: 0.9,
-      max_tokens: 35,
+      max_tokens: data[2],
       top_p: 1.0,
       frequency_penalty: 0.7,
       presence_penalty: 0.9,
+      stop: ["\n"],
+      n: 1,
     };
 
     axios
