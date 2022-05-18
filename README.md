@@ -8,14 +8,17 @@
 
 ### To run the app in production mode:
 
+- If this is your first time cloning the repo down, you can skip step 4 as this is the current start script.
+
 1. In the terminal, run "npm install" to install all dependencies
 
 2. Change the config.example.js file name to config.js.
 
 3. Open the config.js file and replace "YOUR_API_KEY_HERE" with your personal OpenAI API Key in quotes.
 
-4. Replace the current start script with the below script in the scripts section of the package.json file.
-   "webpack --mode production && node ./server/index.js"
+4. Replace the current start script(s) with the below script in the scripts section of the package.json file.
+
+   - "start": "webpack --mode production && node ./server/index.js"
 
 5. In the terminal run, "npm start"
 
@@ -23,19 +26,20 @@
 
 ### To run the app in development mode:
 
-1. Replace the current start script with the below script in the scripts section of the package.json file.
+1. Change the config.example.js file name to config.js.
 
-2. Change the config.example.js file name to config.js.
+2. Open the config.js file and replace "YOUR_API_KEY_HERE" with your personal OpenAI API Key in quotes.
 
-3. Open the config.js file and replace "YOUR_API_KEY_HERE" with your personal OpenAI API Key in quotes.
+3. Replace the current start script(s) with the below scripts in the scripts section of the package.json file.
 
-4. "build": "webpack --mode development --watch", "start": "nodemon ./server/index.js"
+   - "build": "webpack --mode development --watch"
+   - "start": "nodemon ./server/index.js"
 
-5. In one terminal run, "npm start"
+4. In one terminal run, "npm start"
 
-6. In another terminal run, "npm run build"
+5. In another terminal run, "npm run build"
 
-7. Open http://localhost:3000/ in a browser to view app.
+6. Open http://localhost:3000/ in a browser to view app.
 
 ## Tech Stack:
 
