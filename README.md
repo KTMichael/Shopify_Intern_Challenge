@@ -1,5 +1,5 @@
 # Shopify_Intern_Challenge
-The site is launched and live via Heroku and can be found here: 
+
 
 
 ## Demo GIF
