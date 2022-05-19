@@ -29,9 +29,9 @@ const Prompt = () => {
     },
     startUp: {
       instructions: "Brainstorm some start up business ideas for",
-      currentPrompt: `Brainstorm some start up business ideas for socks: Create dating app for lost pairs of socks \n toast: Create a toaster that puts inspirational quotes on your bread \n Beer: Create a beer brand named “occasionally” so when someone asked I say I drink occasionally \n ${currentPromptInstruction} ${prompt}`,
+      currentPrompt: `Brainstorm some start up business ideas. \n socks: Create dating app for lost pairs of socks \n toast: Create a toaster that puts inspirational quotes on your bread \n Beer: Create a beer brand named “occasionally” so when someone asked I say I drink occasionally \n ${prompt}`,
       example: " Meal Kits",
-      engine: "text-curie-001",
+      engine: "text-davinci-002",
       maxToken: 100,
     },
   };
