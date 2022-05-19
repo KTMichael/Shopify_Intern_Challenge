@@ -12,7 +12,7 @@
 
 1. In the terminal, run "npm install" to install all dependencies
 
-2. Change the config.example.js file name to config.js.
+2. Change the config.example.js (located within the server file) file name to config.js.
 
 3. Open the config.js file and replace "YOUR_API_KEY_HERE" with your personal OpenAI API Key in quotes.
 
@@ -26,7 +26,7 @@
 
 ### To run the app in development mode:
 
-1. Change the config.example.js file name to config.js.
+1. Change the config.example.js (located within the server file) file name to config.js.
 
 2. Open the config.js file and replace "YOUR_API_KEY_HERE" with your personal OpenAI API Key in quotes.
 
